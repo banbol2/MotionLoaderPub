@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MotionLoader.exe" version="1.0.0.23" publicKeyToken="8c11b18a28362952" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\motion.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MotionLoader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MotionLoader.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+          <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+          <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+          <requestedExecutionLevel level="highestAvailable" uiAccess="false" />
+
+          이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+          requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialSkin.dll" size="589824">
+      <assemblyIdentity name="MaterialSkin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SXbed8MkGmQfanDm6T2ETMidwxRs8UgP1cmCVlFuzwU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MotionLoader.exe" size="177112">
+      <assemblyIdentity name="MotionLoader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tduWV+Mw+90st6VvGhff/7yoITKIqt1D2uNY1J2K3iY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MotionLoader.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\motion.ico" size="39065">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Wu3pe7v8FwA8OO/Q/KejYuu5om79Te2NIHW3/9dAV6g=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-Q35BJFF\user" issuerKeyHash="f95ab4b4e5b5f49927a71970ebcb1f3a7afcbf75" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+GLbVUdtjN8NB60vtJ0K6tgfu8qJ+eeONnvV7gPRzZM=</DigestValue></Reference></SignedInfo><SignatureValue>h71OcXApnTMYfJiG/Rj7KCW7YdoevH68gUc4d5I/5Zhm3BBWC1jV5f3xdkQWC3tozZuBxd3D3Q7RSFmWTKMfT3fCZel1hH3AHWX9af47WGKLH0wRyPRMqSWksKNtv7OQqBXwS6qA4t/mmSozEllXOZ8XliGEiDOrdngJin7H9/E=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3L1/EiezZL1/lN3LDsxd4uXNDVtDjMd6/tieKlNe4GuBOO8CfQJ8HucKrGLqOjV2NC5PLWdnwpYCdJ0atzDrhnslhYGlZPCocsn7GsG+g4Umxsto7UFeJICp+PqW4/CIiZEqH1gtccRnnmGUxrO2HevJNySI+9smCIFQZHordxE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="93cdd103eed57b368ee7f989cabb1fd8ea0a9db42fad070ddf8c6d4755db62f8" Description="" Url=""><as:assemblyIdentity name="MotionLoader.exe" version="1.0.0.23" publicKeyToken="8c11b18a28362952" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-Q35BJFF\user</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>A/J+TWfSi0CyORcdvrP4WhiBxkQ1F1wH0nRei0e675M=</DigestValue></Reference></SignedInfo><SignatureValue>X9f07lc0+dC0DDWiCI4Dgl6fotj2OwZ3Q0yPp0XV/QsjDIKEJMKfzQuGkM7OxloVXAl43dqketYEEwUg0gBHhZuAGTCQi/6VetPU0bZFnAp5P03XF01xH8iDDPBaNGQmU9fg7CnEzM2iVpHibYA9DBKwBXaQpGV2mvBEyXf02V4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3L1/EiezZL1/lN3LDsxd4uXNDVtDjMd6/tieKlNe4GuBOO8CfQJ8HucKrGLqOjV2NC5PLWdnwpYCdJ0atzDrhnslhYGlZPCocsn7GsG+g4Umxsto7UFeJICp+PqW4/CIiZEqH1gtccRnnmGUxrO2HevJNySI+9smCIFQZHordxE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQP7/BjGT9545NoKj+Ne0AUTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAFEAMwA1AEIASgBGAEYAXAB1AHMAZQByMB4XDTIyMTExNjA2NTIxNloXDTIzMTExNjEyNTIxNlowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBRADMANQBCAEoARgBGAFwAdQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA3L1/EiezZL1/lN3LDsxd4uXNDVtDjMd6/tieKlNe4GuBOO8CfQJ8HucKrGLqOjV2NC5PLWdnwpYCdJ0atzDrhnslhYGlZPCocsn7GsG+g4Umxsto7UFeJICp+PqW4/CIiZEqH1gtccRnnmGUxrO2HevJNySI+9smCIFQZHordxECAwEAATANBgkqhkiG9w0BAQsFAAOBgQA5rcjsfnXDOjpZtkzVCsNvfsOfsGJExHnwf3VkRqU33SDoWbSqAYJSMlopw3RqBtmVaZobiIBJ3lC5RJ4lUqP22onYAfbTcbLv1UYUzD9M/nlErFw2pnZoDIdrH7q2c2V2Kb8kzBOzfvlLbjCp9vCc1G0nmg4FyHAXwzSeMo09Xw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
